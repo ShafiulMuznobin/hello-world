@@ -1,0 +1,43 @@
+#include <stdio.h>  
+  
+int main()  
+{  
+    float bs, hra, da, gs;  
+  
+    printf("Enter basic salary\n");  
+    scanf("%f", &bs); 
+    
+    if (bs<=10000.00)
+
+    {hra = bs * (20.00/100.00);  
+    da  = bs * (80.00/100.00);  
+  
+    gs  = bs + hra + da;  
+  
+    printf("Gross Salary = %f\n", gs);
+    }  
+
+    else if (bs<=20000.00)
+
+    {hra = bs * (25.00/100.00);  
+    da  = bs * (90.00/100.00);  
+  
+    gs  = bs + hra + da;  
+  
+    printf("Gross Salary = %f\n", gs);
+    }  
+    
+    else if (bs>20000.00)
+
+    {hra = bs * (30.00/100.00);  
+    da  = bs * (95.00/100.00);  
+  
+    gs  = bs + hra + da;  
+  
+    printf("Gross Salary = %f\n", gs);
+    }  
+    else 
+    printf("welcome");
+  
+    return 0;  
+} 
