@@ -1,3 +1,25 @@
+//for loop 
+#include<stdio.h>
+
+main(){
+
+    int sum=0;
+    int i;
+
+    //1. initialization/start = 10
+    //2. condition/end = 5
+    //3. increment/decrement
+    for(i=11; i<=100; i++){
+        ;
+        printf("%d ", i);
+        sum = sum + i;
+    }
+    printf("%d", sum);
+}
+
+// While loop
+
+
 #include<stdio.h>
 
 main(){
@@ -10,6 +32,8 @@ main(){
     //3. increment/decrement
     t = 20 + i;
     i=t;
+    
+    
     //while loop
     while(i<=20){
         sum += i; // sum = sum + i;
@@ -18,6 +42,7 @@ main(){
 
     printf("Sum: %d", sum);
 
+   
     //do-while loop
     i=t;
     do{
