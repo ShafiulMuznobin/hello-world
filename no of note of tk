@@ -1,0 +1,34 @@
+ //Write a C program to read an amount (integer value) and break the amount into smallest possible number of bank notes.
+ 
+ #include<stdio.h>
+int main()
+{
+    int amt,total;
+    printf("Enter the ammunt of Tk:");
+    scanf("%d",&amt);
+    printf("There are \n ");
+    total=amt/100;
+    printf("%d no of note(s) of 100 tk\n", total);
+    amt=amt-(total*100);
+    total=amt/50;
+    printf("%d no of note(s) of 50 tk\n", total);
+    amt=amt-(total*50);
+    total=amt/20;
+    printf("%d no of note(s) of 20 tk\n", total);
+    amt=amt-(total*20);
+    total=amt/10;
+    printf("%d no of note(s) of 10 tk\n", total);
+    amt=amt-(total*10);
+    total=amt/5;
+    printf("%d no of note(s) of 5 tk\n", total);
+    amt=amt-(total*5);
+    total=amt/2;
+    printf("%d no of note(s) of 2 tk\n", total);
+    amt=amt-(total*2);
+    total=amt/1;
+    printf("%d no of note(s) of 1 tk\n", total);
+    
+    
+    
+    
+}
